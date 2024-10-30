@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.logo a {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 4rem;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  font-weight: bold
+}
+
+.navLinks li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.loginIcon {
+  display: flex;
+  align-items: center;
+}
+
+.loginIcon a {
+  color: white;
+  text-decoration: none;
+}
+.icons{
+
+    display: flex; 
+  justify-content: space-between; 
+  gap: 2rem
+}
+.wishcount{
+
+  color: darkorange;
+}

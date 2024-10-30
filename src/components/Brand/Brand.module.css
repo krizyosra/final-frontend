@@ -1,0 +1,170 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .submitButton {
+    padding: 12px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #fabd00; /* Légère variation au survol */
+  }
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .cardCategory {
+    display: flex; /* Utilise Flexbox */
+    flex-wrap: wrap; /* Permet aux cartes de s'enrouler sur plusieurs lignes */
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+    padding: 20px; /* Ajoute du padding autour des cartes */
+  }
+  
+  .card {
+    background-color: #fff; /* Couleur de fond de la carte */
+    border: 1px solid #ccc; /* Bordure de la carte */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de profondeur */
+    padding: 15px; /* Espace intérieur de la carte */
+    flex: 1 1 calc(25% - 20px); /* Chaque carte occupe 25% de la largeur moins l'espace entre les cartes */
+    min-width: 250px; /* Largeur minimale pour la carte */
+    transition: transform 0.2s; /* Animation lors du survol */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Agrandit légèrement la carte au survol */
+  }
+  
+  .cardTitle {
+    font-size: 1.5em; /* Taille du titre de la carte */
+    margin: 0; /* Supprime la marge par défaut */
+  }
+  
+  .cardId {
+    color: #777; /* Couleur du texte ID */
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Pour s'assurer que le modal est au-dessus des autres éléments */
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Largeur du modal */
+    text-align: center; /* Centre le texte */
+  }
+  
+  .card {
+    margin: 20px; /* Espace autour de chaque carte */
+    padding: 10px;
+    border: 1px solid #ddd; /* Bordure autour de la carte */
+    border-radius: 4px; /* Coins arrondis */
+    display: flex;
+    justify-content: space-between; /* Espace entre le texte et l'icône */
+    align-items: center; /* Centre verticalement */
+  }
+  
+  .cardTitle {
+    margin: 0; /* Enlève les marges par défaut */
+  }
+  .modalOverlay {
+    position: fixed; /* Position fixe pour couvrir l'ensemble de la page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    display: flex; /* Utiliser flexbox pour centrer le modal */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    z-index: 1000; /* S'assurer que le modal est au-dessus des autres éléments */
+  }
+  
+  .modal {
+    background-color: white; /* Fond du modal */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    max-width: 400px; /* Largeur maximale du modal */
+    width: 90%; /* Largeur responsive */
+  }
+  
+  .modal h3 {
+    margin: 0; /* Supprime la marge par défaut */
+    margin-bottom: 15px; /* Marge inférieure pour espacer le titre et le champ */
+    font-size: 1.5em; /* Taille de la police */
+    text-align: center; /* Centrer le texte du titre */
+  }
+  
+  .modal input {
+    width: 100%; /* Largeur à 100% */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 15px; /* Espacement inférieur */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis pour le champ d'entrée */
+    font-size: 1em; /* Taille de la police */
+  }
+  
+  .modal button {
+    padding: 10px 15px; /* Espacement interne pour les boutons */
+    border: none; /* Supprime les bordures par défaut */
+    border-radius: 4px; /* Coins arrondis pour les boutons */
+    cursor: pointer; /* Changement du curseur pour indiquer que c'est cliquable */
+    font-size: 1em; /* Taille de la police */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+  }
+  
+  .modal button:hover {
+    background-color: #007bff; /* Couleur de fond au survol (ajustez selon votre thème) */
+    color: white; /* Couleur du texte au survol */
+  }
+  
+  .modal button:nth-of-type(2) {
+    background-color: #dc3545; /* Couleur pour le bouton "Fermer" */
+    color: white; /* Couleur du texte pour le bouton "Fermer" */
+  }
+  
+  .modal button:nth-of-type(2):hover {
+    background-color: #c82333; /* Couleur de fond au survol pour le bouton "Fermer" */
+  }
+  
+ 
+    

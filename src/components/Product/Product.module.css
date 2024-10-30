@@ -1,0 +1,128 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .submitButton {
+    padding: 12px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #fabd00; /* Légère variation au survol */
+  }
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .input,
+  .select {
+    margin: 0.625rem 0;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .cardCategory {
+    display: flex; /* Utilise Flexbox */
+    flex-wrap: wrap; /* Permet aux cartes de s'enrouler sur plusieurs lignes */
+   
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+    padding: 20px; /* Ajoute du padding autour des cartes */
+  }
+  
+ 
+  
+  .card:hover {
+    transform: scale(1.05); /* Agrandit légèrement la carte au survol */
+  }
+  
+  .cardTitle {
+    
+    font-size: 1.5em; /* Taille du titre de la carte */
+    margin: 0; /* Supprime la marge par défaut */
+  }
+  
+  .cardId {
+    color: #777; /* Couleur du texte ID */
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px; /* Taille définie pour chaque carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrer le contenu de la carte */
+  }
+  
+  .productImage {
+    max-width: 100%; /* L'image prend 100% de la largeur du parent */
+    height: auto;    /* Conserver les proportions */
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  /* Product.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Assurez-vous qu'il est au-dessus des autres éléments */
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Ajustez selon vos besoins */
+}
+
+.modal h3 {
+  margin: 0 0 15px 0; /* Espace sous le titre */
+}
+
+.modal input,
+.modal select {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%; /* Occuper toute la largeur */
+}
+
+.modal button {
+  margin-right: 10px; /* Espace entre les boutons */
+}
+
+  

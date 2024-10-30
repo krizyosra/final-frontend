@@ -1,0 +1,85 @@
+/* Conteneur principal de la navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 0.9375rem 2.5rem; /* 15px 40px */
+  margin-top: 2rem; /* 2rem */
+}
+
+/* Conteneur interne pour aligner les éléments */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categoriesButton {
+  background-color: #fabd00;
+  color: #000000;
+  border: none;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  border-radius: 0.25rem; /* 4px */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 15rem; /* 15rem */
+  height: 3.75rem; /* 60px */
+}
+
+.categoriesButton:hover {
+  background-color: #fabd00;
+}
+
+/* Barre de recherche */
+.searchBar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 1.25rem; /* 20px */
+  max-width: 40rem; /* 40rem */
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.625rem 0.9375rem; /* 10px 15px */
+  font-size: 1rem; /* 16px */
+  border: 0.125rem solid #e5e5e5; /* 2px */
+  border-radius: 0.25rem 0 0 0.25rem; /* 4px */
+  outline: none;
+  height: 3.75rem; /* 60px */
+}
+
+.searchButton {
+  background-color: #fabd00; /* Couleur jaune */
+  color: #000000;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  border: none;
+  cursor: pointer;
+  border-radius: 0 0.25rem 0.25rem 0; /* 4px */
+  font-size: 1rem; /* 16px */
+  height: 3.75rem; /* 60px */
+}
+
+.searchButton:hover {
+  background-color: #fabd00;
+}
+
+/* Section "Black Friday" */
+.blackFriday {
+  background-color: #fabd00; /* Couleur orange Black Friday */
+  color: rgb(0, 0, 0);
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  font-size: 1rem; /* 16px */
+  font-weight: bold;
+  border-radius: 0.25rem; /* 4px */
+  cursor: pointer;
+  margin-right: 15rem; /* 15rem */
+  height: 3.75rem; /* 60px */
+  align-content: center;
+}
+
+.blackFriday:hover {
+  background-color: #fabd00;
+}

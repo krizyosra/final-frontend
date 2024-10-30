@@ -1,0 +1,89 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Assure-toi que le modal soit au-dessus des autres éléments */
+  }
+  
+  .modalContent {
+    background: white;
+    border-radius: 0.5rem; /* 8px en rem */
+    padding: 1.25rem; /* 20px en rem */
+    width: 25%; /* Largeur responsive */
+  
+   
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1); /* Ajustement de la taille de l'ombre */
+    position: relative;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 0.625rem; /* 10px en rem */
+    right: 0.625rem; /* 10px en rem */
+    cursor: pointer;
+    font-size: 1.5rem; /* 24px en rem */
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.625rem; /* 10px en rem */
+    margin: 0.625rem 0; /* 10px en rem */
+    border: 1px solid #ccc;
+    border-radius: 0.25rem; /* 4px en rem */
+    
+  }
+  
+  .submitButton {
+    background-color: #fabd00; /* Couleur jaune */
+    color: white;
+    border: none;
+    padding: 0.625rem; /* 10px en rem */
+    border-radius: 0.25rem; /* 4px en rem */
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.625rem; /* Ajoute un espace de 10px au-dessus du bouton */
+  }
+  
+  .switchText {
+    text-align: center;
+    margin-top:  1.25rem; /* Ajoute un espace de 10px au-dessus du bouton */
+  }
+  
+  .switchLink {
+    color: #fabd00; /* Couleur jaune */
+    cursor: pointer;
+  }
+  
+  .googleButton {
+    background-color: #ffffff; /* Fond blanc comme le bouton officiel de Google */
+    color: #000; /* Texte noir */
+    border: 1px solid #ddd; /* Bordure légère */
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    display: flex; /* Utiliser Flexbox pour aligner l'icône et le texte */
+    align-items: center; /* Centrer verticalement */
+    justify-content: center; /* Centrer horizontalement */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .googleButton:hover {
+    background-color: #f7f7f7; /* Changement de couleur au survol */
+  }
+  
+  .googleIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+  }
+  

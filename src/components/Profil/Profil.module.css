@@ -1,0 +1,156 @@
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.profileContainer {
+  flex-grow: 1;
+  width: 100%;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 1.25rem; /* Espace entre les cartes */
+  padding: 0 1.25rem; /* Espace à gauche et à droite */
+
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.cardpersonnel {
+  background-color: #f8f9fa;
+  padding: 1.875rem;
+  border-radius: 0.725rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 15;
+  /* Flexbox pour centrer le contenu */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  text-align: center; /* Centre le texte à l'intérieur */
+  font-size: 24px;
+}
+
+.cardsav {
+  background-color: #f8f9fa;
+  padding: 1.875rem;
+  border-radius: 0.725rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 15;
+  grid-row-end: 30;
+}
+
+.card1 {
+  background-color: #f8f9fa;
+  padding: 1.875rem;
+  border-radius: 0.725rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  grid-column-start: 3;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 8;
+}
+
+.card2 {
+  background-color: #f8f9fa;
+  padding: 1.875rem;
+  border-radius: 0.725rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  grid-column-start: 3;
+  grid-column-end: 12;
+  grid-row-start: 8;
+  grid-row-end: 15;
+}
+
+.cardtechnique {
+  background-color: #f8f9fa;
+  padding: 1.875rem;
+  border-radius: 0.725rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  grid-column-start: 3;
+  grid-column-end: 12;
+  grid-row-start: 15;
+  grid-row-end: 30;
+}
+
+
+
+.user {
+  margin-bottom: 5%;
+}
+
+.cardorders {
+  background-color: #f9f9f9; /* Couleur de fond claire */
+ 
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement interne */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  margin: 20px 0; /* Marge externe */
+  grid-column-start: 12;
+  grid-column-end: 30;
+  grid-row-start: 1;
+  grid-row-end: 30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  text-align: center; /* Centre le texte à l'intérieur */
+ 
+  
+  
+}
+
+.cardorders h3 {
+  font-size: 24px; /* Taille de police pour le titre */
+  color: #333; /* Couleur du texte */
+  margin-bottom: 15px; /* Espacement en dessous du titre */
+}
+
+.cardorders div {
+  background-color: #fff; /* Couleur de fond pour chaque commande */
+  border: 1px solid #ccc; /* Bordure pour chaque commande */
+  border-radius: 5px; /* Coins arrondis pour chaque commande */
+  padding: 15px; /* Espacement interne */
+  margin-bottom: 10px; /* Marge en dessous de chaque commande */
+}
+
+
+
+/* Styles pour le statut de commande */
+.cardorders p.status {
+  font-weight: bold; /* Texte en gras pour le statut */
+}
+
+.cardorders p.status.completed {
+  color: #4caf50; /* Couleur verte pour les commandes complètes */
+}
+
+.cardorders p.status.pending {
+  color: #ff9800; /* Couleur orange pour les commandes en attente */
+}
+
+.cardorders p.status.cancelled {
+  color: #f44336; /* Couleur rouge pour les commandes annulées */
+}
+
+.order {
+    margin-bottom: 5%;
+}

@@ -1,0 +1,152 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submitButton {
+  padding: 12px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #fabd00; /* Légère variation au survol */
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cardCategory {
+  display: flex; /* Utilise Flexbox */
+  flex-wrap: wrap; /* Permet aux cartes de s'enrouler sur plusieurs lignes */
+  gap: 20px; /* Espace entre les cartes */
+  justify-content: center; /* Centre les cartes horizontalement */
+  padding: 20px; /* Ajoute du padding autour des cartes */
+}
+
+.card {
+  background-color: #fff; /* Couleur de fond de la carte */
+  border: 1px solid #ccc; /* Bordure de la carte */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet de profondeur */
+  padding: 15px; /* Espace intérieur de la carte */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  min-width: 250px; /* Largeur minimale pour la carte */
+  transition: transform 0.2s; /* Animation lors du survol */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Agrandit légèrement la carte au survol */
+}
+
+.cardTitle {
+  font-size: 1.5em; /* Taille du titre de la carte */
+  margin: 0; /* Supprime la marge par défaut */
+}
+
+.cardId {
+  color: #777; /* Couleur du texte ID */
+}
+
+/* Categorie.module.css */
+
+/* Overlay du modal */
+.modalOverlay {
+  position: sticky; /* Position fixe pour recouvrir toute la page */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  display: flex; /* Flexbox pour centrer le contenu */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  z-index: 1000; /* S'assurer que le modal est au-dessus des autres éléments */
+}
+
+/* Contenu du modal */
+.modal {
+  background-color: white; /* Couleur de fond */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour du modal */
+  width: 90%; /* Largeur de 90% pour s'adapter à différents écrans */
+  max-width: 400px; /* Largeur maximale */
+  transition: transform 0.3s ease; /* Animation lors de l'ouverture */
+}
+
+/* Titre du modal */
+.modal h3 {
+  margin-bottom: 15px; /* Espacement sous le titre */
+  font-size: 1.5rem; /* Taille de la police du titre */
+}
+
+/* Input du modal */
+.modal input {
+  width: 100%; /* Largeur complète */
+  padding: 10px; /* Espacement intérieur */
+  margin-bottom: 15px; /* Espacement sous l'input */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 4px; /* Coins arrondis */
+  font-size: 1rem; /* Taille de la police */
+}
+
+/* Bouton du modal */
+.modal button {
+  background-color: #1abc9c; /* Couleur du bouton */
+  color: white; /* Couleur du texte */
+  padding: 10px 15px; /* Espacement intérieur */
+  border: none; /* Pas de bordure */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en main au survol */
+  font-size: 1rem; /* Taille de la police */
+  width: 100%; /* Largeur complète pour le bouton */
+  margin-top: 10px; /* Espacement supérieur */
+}
+
+/* Couleur du bouton au survol */
+.modal button:hover {
+  background-color: #1abc9c; /* Couleur du bouton au survol */
+}
+
+/* Media query pour des écrans plus petits */
+@media (max-width: 768px) {
+  .modal {
+      width: 95%; /* Largeur de 95% sur les petits écrans */
+  }
+
+  .modal h3 {
+      font-size: 1.2rem; /* Taille de la police plus petite sur les petits écrans */
+  }
+
+  .modal input,
+  .modal button {
+      font-size: 0.9rem; /* Taille de la police plus petite */
+  }
+}
+
